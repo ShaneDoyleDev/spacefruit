@@ -78,3 +78,57 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* ------------------- */
+/* Typography          */
+/* ------------------- */
+
+html {
+  /* Makes calculating REM units easier */
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--clr-black);
+  font-family: var(--text-body);
+  font-size: var(--fs-body);
+}
+
+p {
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+}
+
+.heading-1 {
+  font-size: var(--fs-heading-1);
+  font-weight: var(--fw-extra-bold);
+  letter-spacing: -4px;
+}
+
+.heading-2 {
+  font-size: var(--fs-heading-2);
+  font-weight: var(--fw-extra-bold);
+  letter-spacing: -3px;
+}
+
+.heading-3 {
+  font-size: var(--fs-heading-3);
+  font-weight: var(--fw-extra-bold);
+  letter-spacing: -2px;
+}
+
+.heading-4 {
+  font-size: var(--fs-heading-4);
+  font-weight: var(--fw-bold);
+  letter-spacing: -1.5px;
+}
+
+.subheading {
+  font-size: var(--fs-subheading);
+  font-weight: var(--fw-regular);
+  letter-spacing: 2px;
+}
+
+.text-highlight {
+  color: var(--clr-white);
+}
