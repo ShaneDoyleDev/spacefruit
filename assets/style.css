@@ -750,3 +750,24 @@ nav {
   bottom: -10px;
   width: 100%;
 }
+
+/* ------------------- */
+/* Footer Section      */
+/* ------------------- */
+
+footer {
+  background: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.social-media-icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 500px;
+}
