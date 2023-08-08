@@ -1,1 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Sans+3:wght@400;700&display=swap");
+
+/* ------------------- */
+/* CSS Variables       */
+/* ------------------- */
+
+:root {
+  --clr-primary: #fbce18;
+  --clr-secondary: #fdc9d3;
+  --clr-black: #454545;
+  --clr-white: #fffff5;
+
+  --text-display: "Montserrat", sans-serif;
+  --text-body: "Source Sans 3", sans-serif;
+
+  --fs-heading-1: 5.5rem; /* 55px */
+  --fs-heading-2: 4rem; /* 40px */
+  --fs-heading-3: 3.5rem; /* 35px */
+  --fs-heading-4: 3rem; /* 30px */
+  --fs-subheading: 1.8rem; /* 18px */
+  --fs-body: 1.6rem; /* 16px */
+
+  --fw-extra-bold: 800;
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --border-radius: 10px;
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --transition-duration: 0.3s;
+}
