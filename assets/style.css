@@ -79,6 +79,11 @@ select {
   }
 }
 
+/* used to disable transitions on window resize */
+.disable-transitions * {
+  transition: none !important;
+}
+
 /* ------------------- */
 /* Typography          */
 /* ------------------- */
