@@ -132,3 +132,139 @@ p {
 .text-highlight {
   color: var(--clr-white);
 }
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+/* layout components */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1084px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+/* button components */
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding-block: 10px;
+  padding-inline: 40px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn-regular {
+  background-color: var(--clr-primary);
+}
+
+.btn-regular:hover {
+  background-color: var(--clr-secondary);
+}
+
+.btn-inverted {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+.btn-inverted:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-primary);
+}
+
+.btn-cta {
+  font-size: var(--fs-heading-2);
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-primary);
+  padding-block: 16px;
+  padding-inline: 90px;
+}
+
+.btn-cta:hover {
+  background-color: var(--clr-secondary);
+}
+
+/* navbar component */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-logo {
+  display: none;
+}
+
+.navbar-menu {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.navbar-menu.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-link {
+  position: relative;
+}
+
+.navbar-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--clr-black);
+  height: 1px;
+  width: 0;
+  transition: width 300ms;
+}
+
+.navbar-link:hover:after {
+  width: 100%;
+}
+
+.navbar-hamburger-icon {
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    padding-block: 20px;
+  }
+
+  .navbar-menu {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    width: 700px;
+    justify-content: space-between;
+  }
+
+  .navbar-hamburger-icon {
+    display: none;
+  }
+}
