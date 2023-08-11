@@ -362,3 +362,53 @@ nav {
     transform: translate(-53%, -90%);
   }
 }
+
+/* ------------------- */
+/* Services Section    */
+/* ------------------- */
+
+#services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-block: 100px;
+}
+
+.service-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: var(--clr-primary);
+  padding-block: 50px;
+  padding-inline: 20px;
+  max-width: 330px;
+  border-radius: var(--border-radius);
+}
+
+.service-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.service-card hr {
+  background-color: var(--clr-black);
+  height: 1px;
+  border: 0;
+  width: 80%;
+  border-radius: var(--border-radius);
+}
