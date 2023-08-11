@@ -670,3 +670,38 @@ nav {
     position: absolute;
   }
 }
+
+/* ------------------- */
+/* Team Section        */
+/* ------------------- */
+
+#team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-block: 100px;
+}
+
+.team-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+}
+
+.team-member-card-header {
+  text-align: center;
+}
+
+.team-member-card hr {
+  width: 80%;
+}
