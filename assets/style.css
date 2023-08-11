@@ -499,3 +499,22 @@ nav {
     width: 50%;
   }
 }
+
+/* ------------------- */
+/* Clients Section     */
+/* ------------------- */
+
+#clients-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-block: 100px;
+}
+
+.clients-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
