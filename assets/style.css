@@ -29,3 +29,52 @@
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   --transition-duration: 0.3s;
 }
+
+/* ------------------- */
+/* CSS Reset           */
+/* ------------------- */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove animations for users who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
