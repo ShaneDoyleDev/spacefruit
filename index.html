@@ -722,5 +722,68 @@
 
       <p class="subheading">All Rights Reserved © Spacefruit 2023.</p>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop">
+      <div class="modal">
+        <img
+          class="modal-img"
+          src="assets/images/modal/planet-landscape.webp"
+          alt="a landscape with planets in the sky"
+        />
+
+        <div class="modal-content">
+          <div class="section-header">
+            <img
+              class="section-header-icon"
+              src="assets/images/icons/section-header-icon.svg"
+              alt="decorative icon for the section header"
+              width="100"
+            />
+            <h2 class="heading-2">Contact Us</h2>
+          </div>
+          <form class="modal-form" method="POST">
+            <label class="form-label"
+              >Name
+              <input class="form-input" type="text" name="name" required />
+            </label>
+            <label class="form-label"
+              >Email
+              <input class="form-input" type="email" name="email" required />
+            </label>
+            <label class="form-label textbox-label"
+              >Message
+              <textarea
+                class="form-textbox"
+                id="message"
+                name="message"
+                cols="30"
+                rows="3"
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn-regular" type="submit">Submit</button>
+          </form>
+          <div class="form-message hide-modal-element">
+            <div>
+              <h2 class="heading-1">Thank You!</h2>
+              <p>We will be in touch shortly</p>
+            </div>
+            <img
+              src="assets/images/icons/smile-icon.svg"
+              alt="a smiling face"
+            />
+          </div>
+        </div>
+
+        <img
+          class="modal-close-btn"
+          src="assets/images/icons/cross-icon.svg"
+          alt="a cross icon for closing the modal"
+          width="32"
+          height="32"
+        />
+      </div>
+    </div>
   </body>
 </html>
