@@ -705,3 +705,48 @@ nav {
 .team-member-card hr {
   width: 80%;
 }
+
+/* ------------------- */
+/* CTA Section         */
+/* ------------------- */
+
+#cta-section {
+  position: relative;
+  background: url("images/footer/landscape.jpg") bottom/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 80px;
+  padding-inline: 20px;
+}
+
+.ufo-img {
+  width: 80%;
+  max-width: 560px;
+  transform: translateY(-10%);
+}
+
+#cta-section .btn-cta {
+  font-size: var(--fs-heading-3);
+  padding-block: 8px;
+  padding-inline: 60px;
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (min-width: 800px) {
+  #cta-section .btn-cta {
+    padding-block: 16px;
+    padding-inline: 90px;
+    transform: translateY(-50%);
+  }
+
+  #cta-section .btn-cta:active {
+    transform: translateY(-50%) scale(0.9);
+  }
+}
+
+.footer-background-mask {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+}
