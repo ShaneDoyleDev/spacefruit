@@ -181,3 +181,12 @@ paginationLeftArrow.addEventListener("click", handleSwitchTestimonial);
 paginationDots.forEach((dot) =>
   dot.addEventListener("click", handleSwitchTestimonial)
 );
+
+// form modal events
+contactBtn.addEventListener("click", handleShowModal);
+ctaBtn.addEventListener("click", handleShowModal);
+modalCloseBtn.addEventListener("click", handleCloseModal);
+modalForm.addEventListener("submit", handleModalFormSubmit);
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") handleCloseModal();
+});
