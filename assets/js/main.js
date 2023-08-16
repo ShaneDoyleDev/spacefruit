@@ -83,3 +83,10 @@ function clearFormMessage() {
 function handleShowMobileNav() {
   navbarMenu.classList.remove("navbar-menu-hidden");
 }
+
+/**
+ * Handle closing the mobile navigation.
+ */
+function handleCloseMobileNav() {
+  navbarMenu.classList.add("navbar-menu-hidden");
+}
