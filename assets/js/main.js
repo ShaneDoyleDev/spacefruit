@@ -68,3 +68,11 @@ function showFormMessage() {
   modalForm.classList.add("hide-modal-element");
   modalFormMessage.classList.remove("hide-modal-element");
 }
+
+/**
+ * Clear the displayed message form.
+ */
+function clearFormMessage() {
+  modalForm.classList.remove("hide-modal-element");
+  modalFormMessage.classList.add("hide-modal-element");
+}
