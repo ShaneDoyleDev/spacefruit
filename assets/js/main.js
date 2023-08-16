@@ -107,3 +107,13 @@ function handleCloseModal() {
   modal.classList.add("modal-hidden");
   clearFormMessage();
 }
+
+/**
+ * Handle the form submission within a modal.
+ * @param {Event} event - The form submission event.
+ */
+function handleModalFormSubmit(event) {
+  event.preventDefault();
+  modalForm.reset();
+  showFormMessage();
+}
