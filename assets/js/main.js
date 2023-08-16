@@ -26,3 +26,16 @@ const modalFormMessage = document.querySelector(".form-message");
 const contactBtn = document.querySelector(".contact-btn");
 const ctaBtn = document.querySelector(".btn-cta");
 const modalCloseBtn = document.querySelector(".modal-close-btn");
+
+// global variables
+/**
+ * Timer to manage the duration of the window resize event.
+ * @type {number}
+ */
+let resizeTimer;
+
+/**
+ * Index representing the currently displayed testimonial.
+ * @type {number}
+ */
+let currentTestimonial = 1;
