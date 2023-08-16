@@ -164,3 +164,13 @@ function handleTransitionDisable() {
 
 // window events
 window.addEventListener("resize", handleTransitionDisable);
+
+// navbar events
+navbarHamburger.addEventListener("click", handleShowMobileNav);
+navbarMenuItems.forEach((navMenuItem) =>
+  navMenuItem.addEventListener("click", handleCloseMobileNav)
+);
+navbarCloseBtn.addEventListener("click", handleCloseMobileNav);
+window.addEventListener("resize", () => {
+  if (innerWidth > 800) handleCloseMobileNav();
+});
