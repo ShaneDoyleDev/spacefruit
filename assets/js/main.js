@@ -60,3 +60,11 @@ const heroSectionObserver = new IntersectionObserver((entries) => {
 });
 
 heroSectionObserver.observe(heroSection);
+
+/**
+ * Show a message form.
+ */
+function showFormMessage() {
+  modalForm.classList.add("hide-modal-element");
+  modalFormMessage.classList.remove("hide-modal-element");
+}
