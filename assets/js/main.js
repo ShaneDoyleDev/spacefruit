@@ -174,3 +174,10 @@ navbarCloseBtn.addEventListener("click", handleCloseMobileNav);
 window.addEventListener("resize", () => {
   if (innerWidth > 800) handleCloseMobileNav();
 });
+
+// testimonial events
+paginationRightArrow.addEventListener("click", handleSwitchTestimonial);
+paginationLeftArrow.addEventListener("click", handleSwitchTestimonial);
+paginationDots.forEach((dot) =>
+  dot.addEventListener("click", handleSwitchTestimonial)
+);
