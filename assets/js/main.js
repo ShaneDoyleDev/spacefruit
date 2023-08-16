@@ -90,3 +90,20 @@ function handleShowMobileNav() {
 function handleCloseMobileNav() {
   navbarMenu.classList.add("navbar-menu-hidden");
 }
+
+/**
+ * Handle the logic for displaying modals.
+ */
+function handleShowModal() {
+  backdrop.classList.remove("backdrop-hidden");
+  modal.classList.remove("modal-hidden");
+}
+
+/**
+ * Handle closing the modal.
+ */
+function handleCloseModal() {
+  backdrop.classList.add("backdrop-hidden");
+  modal.classList.add("modal-hidden");
+  clearFormMessage();
+}
