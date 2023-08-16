@@ -149,3 +149,15 @@ function handleSwitchTestimonial(event) {
     .querySelector(`.pagination-dot[data-testimonial="${currentTestimonial}"]`)
     .classList.add("active-dot");
 }
+
+/**
+ * Temporarily disable transition animations during window resize to avoid jankiness.
+ */
+function handleTransitionDisable() {
+  document.body.classList.add("disable-transitions");
+
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("disable-transitions");
+  }, 400);
+}
