@@ -39,3 +39,16 @@ let resizeTimer;
  * @type {number}
  */
 let currentTestimonial = 1;
+
+/**
+ * Add smooth scrolling behavior to sections when their corresponding nav link is clicked.
+ */
+navbarMenuLinks.forEach((menuLink) => {
+  menuLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const targetSection = document.querySelector(menuLink.getAttribute("href"));
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
