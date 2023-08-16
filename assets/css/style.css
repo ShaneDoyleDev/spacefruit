@@ -389,7 +389,7 @@ nav {
 
 #hero-section {
   position: relative;
-  background: url("images/background/hero-background.jpg") center/cover
+  background: url("../images/background/hero-background.jpg") center/cover
     no-repeat;
   height: 100vh;
   margin-bottom: 80px;
@@ -765,7 +765,7 @@ nav {
 
 #cta-section {
   position: relative;
-  background: url("images/footer/landscape.jpg") bottom/cover no-repeat;
+  background: url("../images/footer/landscape.jpg") bottom/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
