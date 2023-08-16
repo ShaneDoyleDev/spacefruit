@@ -161,3 +161,6 @@ function handleTransitionDisable() {
     document.body.classList.remove("disable-transitions");
   }, 400);
 }
+
+// window events
+window.addEventListener("resize", handleTransitionDisable);
