@@ -52,3 +52,11 @@ navbarMenuLinks.forEach((menuLink) => {
     }
   });
 });
+
+// toggle sticky nav when hero section is out of view
+const heroSectionObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) navbar.classList.remove("sticky-nav");
+  else navbar.classList.add("sticky-nav");
+});
+
+heroSectionObserver.observe(heroSection);
