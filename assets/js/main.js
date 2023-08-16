@@ -117,3 +117,35 @@ function handleModalFormSubmit(event) {
   modalForm.reset();
   showFormMessage();
 }
+
+/**
+ * Handle switching between testimonials.
+ * @param {Event} event - The event that triggered the switch.
+ */
+function handleSwitchTestimonial(event) {
+  // if outside range of testimonials, do not change
+  if (event.currentTarget.classList.contains("pagination-right-arrow")) {
+    currentTestimonial < testimonials.length && (currentTestimonial += 1);
+  }
+
+  if (event.currentTarget.classList.contains("pagination-left-arrow")) {
+    currentTestimonial > 1 && (currentTestimonial -= 1);
+  }
+
+  if (event.currentTarget.classList.contains("pagination-dot")) {
+    currentTestimonial = event.currentTarget.dataset.testimonial;
+  }
+
+  // show current active testimonial
+  document
+    .querySelector(".reveal-testimonial")
+    .classList.remove("reveal-testimonial");
+  document.querySelector(".active-dot").classList.remove("active-dot");
+
+  document
+    .querySelector(`.testimonial[data-testimonial="${currentTestimonial}"]`)
+    .classList.add("reveal-testimonial");
+  document
+    .querySelector(`.pagination-dot[data-testimonial="${currentTestimonial}"]`)
+    .classList.add("active-dot");
+}
