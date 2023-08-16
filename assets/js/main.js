@@ -76,3 +76,10 @@ function clearFormMessage() {
   modalForm.classList.remove("hide-modal-element");
   modalFormMessage.classList.add("hide-modal-element");
 }
+
+/**
+ * Handle showing the mobile navigation.
+ */
+function handleShowMobileNav() {
+  navbarMenu.classList.remove("navbar-menu-hidden");
+}
