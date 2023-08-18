@@ -518,3 +518,155 @@ nav {
   justify-content: center;
   gap: 50px;
 }
+
+/* --------------------- */
+/* Testimonials Section  */
+/* --------------------- */
+
+#testimonials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-block: 100px;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-container {
+  position: relative;
+}
+
+.testimonial {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--clr-primary);
+  padding-block: 30px;
+  padding-inline: 50px;
+  border-radius: var(--border-radius);
+  gap: 20px;
+  text-align: center;
+  display: none;
+}
+
+.testimonial-header-section {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.reveal-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+}
+
+.quotation-mark {
+  display: none;
+}
+
+.dot-grid {
+  display: none;
+  position: absolute;
+  top: -34px;
+  right: -44px;
+  width: 120px;
+  height: 120px;
+}
+
+.l-shape {
+  display: none;
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  width: 120px;
+  height: 120px;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--clr-black);
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.active-dot {
+  opacity: 1;
+}
+
+.pagination-left-arrow,
+.pagination-right-arrow {
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.pagination-left-arrow:hover,
+.pagination-right-arrow:hover {
+  transform: scale(1.2);
+}
+
+.pagination-left-arrow:active,
+.pagination-right-arrow:active {
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 700px) {
+  .testimonial {
+    padding-block: 50px;
+    text-align: left;
+    height: 100%;
+  }
+
+  .testimonial-header-section {
+    text-align: left;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .quotation-mark {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .dot-grid {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .l-shape {
+    display: block;
+    position: absolute;
+  }
+}
